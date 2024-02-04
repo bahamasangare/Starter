@@ -1,0 +1,81 @@
+{
+  "include": [
+    "resources/designs/types/**/*",
+    "resources/designs/scripts/**/*",
+    "resources/views/**/*",
+  ],
+  "exclude": [
+    "node_modules",
+  ],
+  "compilerOptions": {
+    "allowJs": true,
+    "target": "ES2017",
+    "module": "ES2020",
+    "lib": [
+      "es2020",
+      "DOM",
+      "WebWorker",
+      "DOM.Iterable"
+    ],
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "incremental": true,
+    "isolatedModules": true,
+    "outDir": "tmp",
+    "noEmit": true,
+    "typeRoots": [
+      "./resources/assets/types",
+      "./node_modules/@types",
+      "./node_modules",
+    ],
+    "types": [
+      "node",
+      "vite/client",
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "App/Assets/*": [
+        "resources/assets/*",
+      ],
+      "App/Designs/*": [
+        "resources/designs/*",
+      ],
+      "App/Images/*": [
+        "resources/assets/images/*",
+      ],
+      "App/Styles/*": [
+        "resources/designs/styles/*",
+      ],
+      "App/Scripts/*": [
+        "resources/designs/scripts/*",
+      ],
+      "App/Types/*": [
+        "resources/designs/types/*",
+      ],
+    },
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "declaration": true,
+    "declarationMap": true,
+    "noImplicitReturns": true,
+    "pretty": true,
+    "useDefineForClassFields": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": false,
+    "noFallthroughCasesInSwitch": true,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+  },
+  "files": ["biome.json"],
+}
